@@ -71,7 +71,7 @@
                     
                     <div class="hidden md:flex space-x-8">
                         <a href="/" class="text-gray-700 hover:text-blue-600 font-medium transition">Beranda</a>
-                        <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Tentang Kami</a>
+                        <a href="/tentang-kami" class="text-gray-700 hover:text-blue-600 font-medium transition">Tentang Kami</a>
                         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Layanan Bisnis</a>
                         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Pengadaan</a>
                         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Berita</a>

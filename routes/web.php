@@ -8,3 +8,7 @@ Route::get('/', function () {
     
     return view('home', ['posts' => $posts]);
 });
+
+Route::get('/tentang-kami', function () {
+    return view('about');
+});

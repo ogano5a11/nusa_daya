@@ -59,7 +59,7 @@
                 <div class="md:w-1/2">
                     <div class="relative">
                         <div class="absolute -top-4 -left-4 w-24 h-24 bg-blue-100 rounded-full z-0"></div>
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                        <img src="{{ asset('img/gambar-home-Tentangkami.png') }}"
                              alt="Engineer working" 
                              class="relative z-10 rounded-2xl shadow-2xl">
                     </div>
@@ -90,7 +90,7 @@
                             Teknologi Terkini
                         </li>
                     </ul>
-                    <a href="#" class="text-blue-600 font-bold hover:text-blue-800 flex items-center group">
+                    <a href="/tentang-kami" class="text-blue-600 font-bold hover:text-blue-800 flex items-center group">
                         Pelajari Selengkapnya 
                         <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </a>
