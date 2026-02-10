@@ -21,7 +21,7 @@
                     Kami hadir sebagai mitra strategis dalam pengelolaan aset ketenagalistrikan, operasi, dan pemeliharaan untuk memastikan keandalan energi di Indonesia Tengah dan Timur.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#" class="bg-cyan-500 text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-cyan-400 transition text-center shadow-lg hover:shadow-cyan-500/50">
+                    <a href="{{ route('services') }}" class="bg-cyan-500 text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-cyan-400 transition text-center shadow-lg hover:shadow-cyan-500/50">
                         Jelajahi Layanan
                     </a>
                     <a href="#" class="border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white hover:text-blue-900 transition text-center">
@@ -90,7 +90,7 @@
                             Teknologi Terkini
                         </li>
                     </ul>
-                    <a href="/tentang-kami" class="text-blue-600 font-bold hover:text-blue-800 flex items-center group">
+                    <a href="{{ route('about') }}" class="text-blue-600 font-bold hover:text-blue-800 flex items-center group">
                         Pelajari Selengkapnya 
                         <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </a>
