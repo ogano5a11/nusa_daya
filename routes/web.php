@@ -5,10 +5,17 @@ use App\Models\Post;
 
 Route::get('/', function () {
     $posts = Post::latest()->take(3)->get();
-    
     return view('home', ['posts' => $posts]);
-});
+})->name('home');
 
 Route::get('/tentang-kami', function () {
     return view('about');
-});
+})->name('about');
+
+Route::get('/berita/{post:slug}', function (Post $post) {
+    return view('post', ['post' => $post]);
+})->name('posts.show');
+
+Route::get('/layanan', function () {
+    return view('services');
+})->name('services');

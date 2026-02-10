@@ -234,14 +234,14 @@
                             </div>
                             
                             <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition">
-                                <a href="#">{{ $post->title }}</a>
+                                <a href="{{ route('posts.show', $post->slug) }}">{{ $post->title }}</a>
                             </h3>
                             
                             <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
                                 {{ $post->excerpt }}
                             </p>
                             
-                            <a href="#" class="text-blue-600 font-semibold text-sm hover:underline mt-auto">Baca Selengkapnya</a>
+                            <a href="{{ route('posts.show', $post->slug) }}" class="text-blue-600 font-semibold text-sm hover:underline mt-auto">Baca Selengkapnya</a>
                         </div>
                     </article>
                 @endforeach
