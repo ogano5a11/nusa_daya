@@ -81,7 +81,7 @@
                             <span class="bg-green-100 p-1 rounded-full mr-3 text-green-600">
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
                             </span>
-                            Jangkauan Luas (Indonesia Timur & Tengah)
+                            Jangkauan Indonesia Timur & Tengah
                         </li>
                         <li class="flex items-center text-gray-700">
                             <span class="bg-green-100 p-1 rounded-full mr-3 text-green-600">
@@ -185,7 +185,7 @@
             <div class="md:w-1/2 relative">
                 <img src="{{ asset('img/peta-wilayah.jpg') }}" 
                      alt="Peta Wilayah Kerja PLN Nusa Daya" 
-                     class="w-full drop-shadow-2xl opacity-90 hover:opacity-100 transition duration-500 transform hover:scale-105 border-4 border-white/20">
+                     class="w-full drop-shadow-2xl rounded-xl opacity-90 hover:opacity-100 transition duration-500 transform hover:scale-105 border-4 border-white/20">
             </div>
         </div>
     </section>
@@ -204,78 +204,48 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <article class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                             alt="Meeting Direksi" 
-                             class="w-full h-full object-cover hover:scale-105 transition duration-700">
-                        <div class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                            Korporat
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex items-center text-gray-400 text-sm mb-3">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                            10 Februari 2026
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition">
-                            <a href="#">PLN Nusa Daya Perkuat Digitalisasi Pembangkit di Sulawesi</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
-                            Transformasi digital dilakukan untuk meningkatkan efisiensi operasional dan monitoring aset secara realtime.
-                        </p>
-                        <a href="#" class="text-blue-600 font-semibold text-sm hover:underline mt-auto">Baca Selengkapnya</a>
-                    </div>
-                </article>
+                @foreach($posts as $post)
+                    @php
+                        // Logika Warna Badge berdasarkan Kategori
+                        $badgeColor = match($post->category) {
+                            'Korporat' => 'bg-blue-600',
+                            'CSR' => 'bg-green-500',
+                            'Penghargaan' => 'bg-yellow-500',
+                            'Teknologi' => 'bg-purple-500',
+                            default => 'bg-gray-500',
+                        };
+                    @endphp
 
-                <article class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                             alt="Kegiatan CSR" 
-                             class="w-full h-full object-cover hover:scale-105 transition duration-700">
-                        <div class="absolute top-4 left-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                            CSR
+                    <article class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full">
+                        <div class="h-56 overflow-hidden relative">
+                            <img src="{{ $post->image }}" 
+                                 alt="{{ $post->title }}" 
+                                 class="w-full h-full object-cover hover:scale-105 transition duration-700">
+                            
+                            <div class="absolute top-4 left-4 {{ $badgeColor }} text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                                {{ $post->category }}
+                            </div>
                         </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex items-center text-gray-400 text-sm mb-3">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                            05 Februari 2026
+                        
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center text-gray-400 text-sm mb-3">
+                                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                {{ \Carbon\Carbon::parse($post->published_at)->translatedFormat('d F Y') }}
+                            </div>
+                            
+                            <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition">
+                                <a href="#">{{ $post->title }}</a>
+                            </h3>
+                            
+                            <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
+                                {{ $post->excerpt }}
+                            </p>
+                            
+                            <a href="#" class="text-blue-600 font-semibold text-sm hover:underline mt-auto">Baca Selengkapnya</a>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition">
-                            <a href="#">Peduli Lingkungan, Pegawai Tanam 1000 Mangrove</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
-                            Sebagai wujud tanggung jawab sosial lingkungan, PLN Nusa Daya menggelar aksi penanaman mangrove di pesisir.
-                        </p>
-                        <a href="#" class="text-blue-600 font-semibold text-sm hover:underline mt-auto">Baca Selengkapnya</a>
-                    </div>
-                </article>
-
-                <article class="bg-white rounded-xl shadow-sm hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100 flex flex-col h-full">
-                    <div class="h-56 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                             alt="Penghargaan" 
-                             class="w-full h-full object-cover hover:scale-105 transition duration-700">
-                        <div class="absolute top-4 left-4 bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
-                            Penghargaan
-                        </div>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <div class="flex items-center text-gray-400 text-sm mb-3">
-                            <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                            28 Januari 2026
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3 hover:text-blue-600 transition">
-                            <a href="#">Raih Penghargaan K3 Tingkat Nasional 2025</a>
-                        </h3>
-                        <p class="text-gray-600 text-sm line-clamp-3 mb-4 flex-grow">
-                            Komitmen terhadap keselamatan kerja membuahkan hasil manis dengan diraihnya penghargaan Zero Accident.
-                        </p>
-                        <a href="#" class="text-blue-600 font-semibold text-sm hover:underline mt-auto">Baca Selengkapnya</a>
-                    </div>
-                </article>
-            </div>
+                    </article>
+                @endforeach
+                </div>
             
             <div class="mt-8 text-center md:hidden">
                  <a href="#" class="inline-block border border-blue-600 text-blue-600 px-6 py-2 rounded-full font-semibold hover:bg-blue-50">

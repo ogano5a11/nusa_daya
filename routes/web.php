@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Models\Post;
 
 Route::get('/', function () {
-    return view('home');
+    $posts = Post::latest()->take(3)->get();
+    
+    return view('home', ['posts' => $posts]);
 });
