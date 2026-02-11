@@ -6,8 +6,10 @@
     <title>{{ $title ?? 'PLN Nusa Daya' }} - Powering The Future</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <style>
         body { font-family: 'Inter', sans-serif; }
+        [x-cloak] { display: none !important; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
@@ -62,11 +64,7 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full">
                 <div class="flex justify-between h-full items-center">
                     <div class="flex-shrink-0 flex items-center gap-2">
-                        <img class="h-10 w-auto" src="https://upload.wikimedia.org/wikipedia/commons/2/20/Logo_PLN.svg" alt="PLN Logo">
-                        <div>
-                            <h1 class="text-xl font-bold text-blue-900 leading-none">PLN NUSA DAYA</h1>
-                            <p class="text-xs text-blue-500 font-semibold tracking-widest">POWERING SOLUTIONS</p>
-                        </div>
+                        <img class="h-10 w-auto" src="{{ asset('img/logo-pln-nusaDaya.png') }}" alt="PLN Logo">
                     </div>
                     
                     <div class="hidden md:flex space-x-8">
