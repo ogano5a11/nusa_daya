@@ -51,7 +51,8 @@
         }
     }" 
     x-init="startTimer()"
-    class="relative w-full h-[90vh] min-h-[600px] flex flex-col bg-gray-900 mt-[-80px] pt-20"> <div class="absolute inset-0 z-0 overflow-hidden">
+    class="relative w-full h-[90vh] min-h-[600px] flex flex-col bg-gray-900 mt-[-80px] pt-20"> 
+        <div class="absolute inset-0 z-0 overflow-hidden">
             <template x-for="(slide, index) in slides" :key="index">
                 <img x-show="active === index" 
                      :src="slide.img" 
@@ -78,11 +79,11 @@
                         <span class="text-white/60 text-lg">/ <span x-text="slides.length"></span></span>
                     </div>
                     <div class="flex gap-3">
-                        <button @click="prev()" class="w-12 h-12 rounded-full border border-white/40 text-white flex items-center justify-center hover:bg-white hover:text-blue-900 transition backdrop-blur-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        <button @click="prev()" class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-yellow-400 hover:border-yellow-400 hover:text-blue-950 hover:scale-105 transition-all duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
                         </button>
-                        <button @click="next()" class="w-12 h-12 rounded-full border border-white/40 text-white flex items-center justify-center hover:bg-white hover:text-blue-900 transition backdrop-blur-sm">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        <button @click="next()" class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white flex items-center justify-center hover:bg-yellow-400 hover:border-yellow-400 hover:text-blue-950 hover:scale-105 transition-all duration-300 shadow-lg">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
                         </button>
                     </div>
                 </div>
@@ -99,9 +100,9 @@
                 </div>
                 
                 <div class="shrink-0 border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-8">
-                    <a :href="slides[active].link" class="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-700 transition shadow-lg hover:shadow-blue-500/30">
+                    <a :href="slides[active].link" class="inline-flex items-center bg-gradient-to-r from-blue-700 to-blue-500 text-white px-8 py-4 rounded-full font-bold hover:scale-105 hover:shadow-[0_10px_20px_rgba(59,130,246,0.3)] transition-all duration-300 group">
                         Explore Now
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </a>
                 </div>
             </div>
@@ -139,18 +140,18 @@
                     <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                         Kami tidak hanya mengelola aset, tetapi juga memastikan setiap investasi infrastruktur kelistrikan memberikan nilai maksimal (Beyond kWh) bagi masyarakat dan industri.
                     </p>
-                    <a href="{{ route('about') }}" class="text-blue-600 font-bold hover:text-blue-800 transition flex items-center group text-lg">
+                    <a href="{{ route('about') }}" class="inline-flex items-center text-blue-700 font-bold border-2 border-blue-100 hover:border-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full transition-all duration-300 group text-lg">
                         Profil Perusahaan 
-                        <span class="ml-2 transform group-hover:translate-x-2 transition">&rarr;</span>
+                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </a>
                 </div>
                 <div class="md:w-1/2 relative">
-                    <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl">
+                    <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                         <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
                              alt="Tim PLN" class="w-full h-full object-cover">
                     </div>
-                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-yellow-400 rounded-full -z-10"></div>
-                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-blue-100 rounded-full -z-10"></div>
+                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full shadow-lg -z-10"></div>
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full shadow-inner -z-10"></div>
                 </div>
             </div>
         </div>
