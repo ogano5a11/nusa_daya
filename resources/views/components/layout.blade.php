@@ -73,6 +73,7 @@
                         <a href="/" class="text-gray-700 hover:text-blue-600 font-medium transition">Beranda</a>
                         <a href="{{ route('about') }}" class="text-gray-700 hover:text-blue-600 font-medium transition">Tentang Kami</a>
                         <a href="{{ route('services') }}" class="text-gray-700 hover:text-blue-600 font-medium transition">Layanan Bisnis</a>
+                        <a href="{{ route('governance') }}" class="text-gray-700 hover:text-blue-600 font-medium transition">Tata Kelola</a>
                         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Pengadaan</a>
                         <a href="#" class="text-gray-700 hover:text-blue-600 font-medium transition">Berita</a>
                     </div>

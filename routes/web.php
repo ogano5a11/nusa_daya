@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\Post;
+use App\Models\Document;
 
 Route::get('/', function () {
     $posts = Post::latest()->take(3)->get();
@@ -19,3 +20,8 @@ Route::get('/berita/{post:slug}', function (Post $post) {
 Route::get('/layanan', function () {
     return view('services');
 })->name('services');
+
+Route::get('/tata-kelola', function () {
+    $documents = Document::all()->groupBy('category');
+    return view('governance', ['documents' => $documents]);
+})->name('governance');
