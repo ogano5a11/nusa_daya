@@ -129,149 +129,369 @@
         </div>
     </section>
 
-    <section id="tentang" class="py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row gap-16 items-center">
-                <div class="md:w-1/2">
-                    <h2 class="text-4xl font-bold text-gray-900 mb-6">Berkontribusi Membangun Kedaulatan Energi Bangsa</h2>
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        Sejak 2003, PT PLN Nusa Daya telah menjadi pilar penting dalam memastikan pasokan listrik yang andal di Indonesia Tengah dan Timur. 
-                    </p>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Kami tidak hanya mengelola aset, tetapi juga memastikan setiap investasi infrastruktur kelistrikan memberikan nilai maksimal (Beyond kWh) bagi masyarakat dan industri.
-                    </p>
-                    <a href="{{ route('about') }}" class="inline-flex items-center text-blue-700 font-bold border-2 border-blue-100 hover:border-blue-600 hover:bg-blue-50 px-6 py-3 rounded-full transition-all duration-300 group text-lg">
-                        Profil Perusahaan 
-                        <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                    </a>
+    <section class="relative z-40 -mt-12 md:-mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] py-10 px-8 border border-gray-100 backdrop-blur-xl">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 divide-y md:divide-y-0 md:divide-x divide-gray-100">
+                <div class="text-center pt-4 md:pt-0">
+                    <p class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-1">22<span class="text-teal-500">+</span></p>
+                    <p class="text-xs md:text-sm font-bold text-gray-400 uppercase tracking-widest">Tahun Pengalaman</p>
                 </div>
-                <div class="md:w-1/2 relative">
-                    <div class="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
-                        <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
-                             alt="Tim PLN" class="w-full h-full object-cover">
+                <div class="text-center pt-4 md:pt-0">
+                    <p class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-1">335<span class="text-teal-500">+</span></p>
+                    <p class="text-xs md:text-sm font-bold text-gray-400 uppercase tracking-widest">Proyek Dikelola</p>
+                </div>
+                <div class="text-center pt-4 md:pt-0">
+                    <p class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-1">5<span class="text-teal-500"></span></p>
+                    <p class="text-xs md:text-sm font-bold text-gray-400 uppercase tracking-widest">Pulau Dilayani</p>
+                </div>
+                <div class="text-center pt-4 md:pt-0 flex flex-col justify-center">
+                    <div class="flex items-center justify-center gap-2 mb-1">
+                        <span class="relative flex h-4 w-4">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-4 w-4 bg-teal-500"></span>
+                        </span>
+                        <p class="text-4xl md:text-5xl font-extrabold text-blue-950">24<span class="text-teal-500">/7</span></p>
                     </div>
-                    <div class="absolute -bottom-6 -left-6 w-24 h-24 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-full shadow-lg -z-10"></div>
-                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full shadow-inner -z-10"></div>
+                    <p class="text-xs md:text-sm font-bold text-gray-400 uppercase tracking-widest">Siaga Operasi</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-24 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-end mb-16">
-                <div>
-                    <h2 class="text-4xl font-bold text-gray-900 mb-4">Solusi Menyeluruh</h2>
-                    <p class="text-xl text-gray-600">Ekosistem layanan O&M terpadu untuk kebutuhan infrastruktur Anda.</p>
+    <section id="tentang" class="py-28 bg-white overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"
+             x-data="{ 
+                activeTab: 1,
+                items: [
+                    {
+                        id: 1,
+                        title: 'Mengelola 50+ Pembangkit Tersebar',
+                        desc: 'Dari kepulauan terluar hingga pusat industri, kami memastikan mesin pembangkit beroperasi dengan keandalan (EAF) tinggi untuk menjaga pasokan energi nasional.',
+                        img: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+                    },
+                    {
+                        id: 2,
+                        title: 'Memelihara Ribuan Kilo Jaringan',
+                        desc: 'Menembus hutan dan melintasi sungai, tim teknis kami menjaga urat nadi transmisi dan distribusi (JTM/JTR) agar bebas dari gangguan kritis.',
+                        img: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+                    },
+                    {
+                        id: 3,
+                        title: 'Hadirkan Solusi Daya Tanpa Kedip',
+                        desc: 'Melalui sistem DRUPS (Diesel Rotary Uninterruptible Power Supply), kami melindungi fasilitas vital seperti rumah sakit dan data center dari kedipan listrik sedetik pun.',
+                        img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+                    }
+                ]
+             }">
+             
+            <div class="flex flex-col lg:flex-row gap-16 items-start">
+                
+                <div class="lg:w-1/2 flex flex-col">
+                    <span class="inline-block text-teal-600 font-bold tracking-widest uppercase text-sm mb-4">PLN Nusa Daya Untuk Indonesia</span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-6 leading-tight">Membangun Kedaulatan Energi Bangsa</h2>
+                    <p class="text-lg text-gray-500 mb-10 leading-relaxed pr-4">
+                        Kami telah berkontribusi membangun infrastruktur kelistrikan terbaik di wilayah Indonesia Tengah dan Timur untuk mewujudkan pertumbuhan ekonomi yang setara.
+                    </p>
+                    
+                    <div class="flex flex-col space-y-2 mt-4 relative">
+                        <div class="absolute left-0 top-2 bottom-2 w-1 bg-gray-100 rounded-full"></div>
+
+                        <template x-for="item in items" :key="item.id">
+                            <div class="relative pl-6 cursor-pointer group" @click="activeTab = item.id">
+                                
+                                <div class="absolute left-0 top-0 w-1 bg-teal-500 transition-all duration-500 rounded-full"
+                                     :class="activeTab === item.id ? 'h-full opacity-100' : 'h-0 opacity-0 group-hover:h-full group-hover:opacity-30'"></div>
+                                
+                                <h3 class="text-2xl font-bold transition-all duration-300 py-3"
+                                    :class="activeTab === item.id ? 'text-blue-950' : 'text-gray-400 group-hover:text-blue-900/70'"
+                                    x-text="item.title"></h3>
+                                
+                                <div x-show="activeTab === item.id" 
+                                     x-collapse.duration.500ms
+                                     class="overflow-hidden">
+                                    <p class="text-gray-600 font-medium leading-relaxed pb-6 pt-1" x-text="item.desc"></p>
+                                    
+                                    <a href="{{ route('about') }}" class="inline-flex items-center text-teal-600 font-bold hover:text-teal-800 transition-colors pb-6 text-sm">
+                                        Pelajari Lebih Lanjut
+                                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
                 </div>
-                <a href="{{ route('services') }}" class="hidden md:flex text-blue-600 font-bold hover:text-blue-800 transition items-center">
-                    Lihat Semua Layanan <span class="ml-2">&rarr;</span>
+
+                <div class="lg:w-1/2 w-full h-[600px] relative sticky top-32">
+                    <template x-for="item in items" :key="'img-'+item.id">
+                        <div class="absolute inset-0 transition-all duration-700 ease-[cubic-bezier(0.4,0,0.2,1)]"
+                             :class="{ 
+                                'opacity-100 z-30 transform scale-100 translate-x-0 translate-y-0': activeTab === item.id,
+                                'opacity-60 z-20 transform scale-95 translate-x-8 -translate-y-8': activeTab === (item.id - 1) || (activeTab === 3 && item.id === 1),
+                                'opacity-0 z-10 transform scale-90 translate-x-16 -translate-y-16': activeTab !== item.id && activeTab !== (item.id - 1) && !(activeTab === 3 && item.id === 1)
+                             }">
+                             
+                            <div class="w-full h-full rounded-3xl overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)] border-8 border-white bg-gray-100">
+                                <img :src="item.img" :alt="item.title" class="w-full h-full object-cover">
+                                <div class="absolute inset-0 bg-blue-900/10 mix-blend-overlay"></div>
+                            </div>
+
+                        </div>
+                    </template>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 bg-gray-50 relative border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="inline-flex items-center justify-center text-teal-600 font-bold tracking-widest uppercase text-sm mb-4">
+                    <span class="w-8 h-0.5 bg-teal-600 mr-3"></span> Lini Bisnis Utama <span class="w-8 h-0.5 bg-teal-600 ml-3"></span>
+                </span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-6">Solusi Terintegrasi</h2>
+                <p class="text-lg text-gray-600 leading-relaxed">
+                    Menghadirkan layanan pengelolaan aset ketenagalistrikan yang komprehensif, andal, dan berstandar internasional dari hulu ke hilir.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                
+                <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
+                    <img src="{{ asset('img/gambar-services-pembangkit.jpg') }}"
+                         alt="AMC Pembangkit" 
+                         class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
+
+                    <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
+                        <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <svg class="w-7 h-7 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">AMC Pembangkit</h3>
+                        
+                        <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                            <p class="text-blue-100 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
+                                Pengoperasian dan pemeliharaan mesin pembangkit untuk efisiensi tinggi, penjagaan EAF, dan monitoring aset secara realtime.
+                            </p>
+                            <a href="{{ route('services') }}" class="inline-flex items-center text-teal-400 hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                                Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="AMC Transmisi" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
+                        <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <svg class="w-7 h-7 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">AMC Transmisi</h3>
+                        <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                            <p class="text-blue-100 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
+                                Jasa operasi dan pemeliharaan Gardu Induk (GI) serta aset transmisi untuk menjamin keandalan penyaluran listrik tegangan tinggi.
+                            </p>
+                            <a href="{{ route('services') }}" class="inline-flex items-center text-teal-400 hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                                Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
+                    <img src="{{ asset('img/gambar-services-pembangkit.jpg') }}" alt="AMC Distribusi" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
+                        <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <svg class="w-7 h-7 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">AMC Distribusi</h3>
+                        <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                            <p class="text-blue-100 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
+                                Pemeliharaan jaringan tegangan menengah dan rendah serta layanan teknik (Yantek) untuk kualitas listrik sampai ke pelanggan.
+                            </p>
+                            <a href="{{ route('services') }}" class="inline-flex items-center text-teal-400 hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                                Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Penyedia Pembangkit" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
+                        <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <svg class="w-7 h-7 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">Penyedia Pembangkit</h3>
+                        <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                            <p class="text-blue-100 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
+                                Menyediakan layanan penyediaan energi listrik terpadu kapasitas menengah khusus untuk wilayah Indonesia Timur.
+                            </p>
+                            <a href="{{ route('services') }}" class="inline-flex items-center text-teal-400 hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                                Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Beyond kWh" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
+                        <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <svg class="w-7 h-7 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">Beyond kWh</h3>
+                        <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                            <p class="text-blue-100 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
+                                Layanan inovatif kelistrikan premium, termasuk teknologi DRUPS untuk jaminan pasokan daya tanpa kedip (Zero Downtime).
+                            </p>
+                            <a href="{{ route('services') }}" class="inline-flex items-center text-teal-400 hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                                Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
+                    <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pelayanan Pelanggan" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
+                    <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
+                        <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <svg class="w-7 h-7 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">Pelayanan Pelanggan</h3>
+                        <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
+                            <p class="text-blue-100 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
+                                Manajemen pelanggan komprehensif, mulai dari pembacaan meter, penagihan, hingga instalasi pelanggan via ListriQu.
+                            </p>
+                            <a href="{{ route('services') }}" class="inline-flex items-center text-teal-400 hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                                Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="{{ route('services') }}" class="inline-flex items-center bg-blue-950 text-white px-8 py-4 rounded-full font-bold hover:bg-teal-600 transition shadow-lg group">
+                    Jelajahi Semua Layanan Kami
+                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </a>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition duration-500 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">AMC Pembangkit</h3>
-                    <p class="text-gray-600 mb-8 leading-relaxed">Pengoperasian dan pemeliharaan mesin pembangkit untuk efisiensi tinggi dan monitoring aset realtime.</p>
-                    <a href="{{ route('services') }}" class="text-blue-600 font-semibold group-hover:text-blue-800">Pelajari detail</a>
-                </div>
-
-                <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition duration-500 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-yellow-50 text-yellow-600 rounded-xl flex items-center justify-center mb-8 group-hover:bg-yellow-500 group-hover:text-white transition duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Transmisi & Distribusi</h3>
-                    <p class="text-gray-600 mb-8 leading-relaxed">Layanan inspeksi jaringan, pemeliharaan gardu induk, dan manajemen aset distribusi (Yantek).</p>
-                    <a href="{{ route('services') }}" class="text-blue-600 font-semibold group-hover:text-blue-800">Pelajari detail</a>
-                </div>
-
-                <div class="bg-white p-10 rounded-2xl shadow-sm hover:shadow-2xl transition duration-500 border border-gray-100 group">
-                    <div class="w-16 h-16 bg-purple-50 text-purple-600 rounded-xl flex items-center justify-center mb-8 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Beyond kWh (DRUPS)</h3>
-                    <p class="text-gray-600 mb-8 leading-relaxed">Solusi kualitas daya premium tanpa kedip (Zero Downtime) dan pelayanan manajemen pelanggan (Billman).</p>
-                    <a href="{{ route('services') }}" class="text-blue-600 font-semibold group-hover:text-blue-800">Pelajari detail</a>
-                </div>
-            </div>
         </div>
     </section>
 
-    <section class="py-24 bg-blue-950 text-white overflow-hidden relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col lg:flex-row items-center gap-16">
-                <div class="lg:w-5/12 z-10">
-                    <h2 class="text-4xl font-bold mb-6">Menghubungkan Nusantara</h2>
-                    <p class="text-blue-200 text-lg mb-8 leading-relaxed">
-                        Kami mengelola jaringan dan infrastruktur yang tersebar luas dari Kalimantan, Sulawesi, hingga kepulauan Maluku dan Papua. Memastikan energi yang setara untuk seluruh pelosok negeri.
-                    </p>
-                    <a href="{{ route('about') }}" class="inline-block bg-white text-blue-900 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition">
-                        Lihat Jangkauan Kami
-                    </a>
-                </div>
-                
-                <div class="lg:w-7/12 relative">
-                    <img src="{{ asset('img/peta-wilayah.jpg') }}" 
-                         alt="Peta Wilayah Kerja PLN Nusa Daya" 
-                         class="w-full rounded-2xl shadow-2xl opacity-90 hover:opacity-100 transition duration-500 border-4 border-white/10 filter contrast-125">
-                    
-                    <div class="absolute inset-0 bg-blue-500/20 blur-3xl -z-10 rounded-full"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-24 bg-white">
+    <section class="py-28 bg-white overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold text-gray-900 mb-4">Media & Informasi</h2>
-                <p class="text-xl text-gray-600">Berita dan pembaruan terkini dari aktivitas perusahaan kami.</p>
+                <span class="text-teal-600 font-bold tracking-widest uppercase text-sm mb-2 block">Jangkauan Luas</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-6">Menghubungkan Nusantara</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Kami mengelola jaringan dan infrastruktur yang tersebar luas melintasi pulau-pulau, memastikan keadilan energi untuk kawasan Indonesia Tengah dan Timur.
+                </p>
+            </div>
+            
+            <div class="relative max-w-5xl mx-auto">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
+                    <img src="{{ asset('img/peta-wilayah.jpg') }}" 
+                         alt="Peta Wilayah Kerja PLN Nusa Daya" 
+                         class="w-full h-auto object-cover transform hover:scale-[1.02] transition duration-700">
+                    
+                    <div class="absolute inset-0 bg-blue-900/5 mix-blend-multiply pointer-events-none"></div>
+                </div>
+
+                <div class="absolute -left-4 md:-left-12 bottom-10 bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100 z-10 hidden sm:block">
+                    <h4 class="font-bold text-blue-950 text-xl mb-4 border-b-2 border-teal-500 pb-2 inline-block">Area Operasional</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3 text-gray-600 font-medium">
+                            <span class="flex h-3 w-3 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span></span>
+                            Kalimantan
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium">
+                            <span class="flex h-3 w-3 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span></span>
+                            Sulawesi
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium">
+                            <span class="flex h-3 w-3 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span></span>
+                            Nusa Tenggara
+                        </li>
+                        <li class="flex items-center gap-3 text-gray-600 font-medium">
+                            <span class="flex h-3 w-3 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span></span>
+                            Maluku & Papua
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-28 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4">Media & Informasi</h2>
+                    <p class="text-lg text-gray-600">Berita dan kabar terbaru dari aktivitas perusahaan kami.</p>
+                </div>
+                <a href="#" class="inline-flex items-center font-bold text-blue-950 hover:text-teal-600 transition-colors group px-6 py-3 border-2 border-blue-950 hover:border-teal-600 rounded-full">
+                    Lihat Semua Berita
+                    <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
                 @foreach($posts as $post)
                     @php
                         $badgeColor = match($post->category) {
-                            'Korporat' => 'bg-blue-100 text-blue-800',
-                            'CSR' => 'bg-green-100 text-green-800',
-                            'Penghargaan' => 'bg-yellow-100 text-yellow-800',
-                            default => 'bg-gray-100 text-gray-800',
+                            'Korporat' => 'bg-blue-100 text-blue-700',
+                            'CSR' => 'bg-teal-100 text-teal-700',
+                            'Penghargaan' => 'bg-yellow-100 text-yellow-700',
+                            default => 'bg-gray-200 text-gray-700',
                         };
                     @endphp
 
-                    <article class="group cursor-pointer">
-                        <div class="overflow-hidden rounded-2xl mb-6 shadow-md relative">
-                            <img src="{{ $post->image }}" alt="{{ $post->title }}" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+                    <article class="group cursor-pointer flex flex-col h-full bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-gray-100 hover:-translate-y-1">
+                        <div class="overflow-hidden relative h-64 w-full">
+                            <img src="{{ $post->image }}" alt="{{ $post->title }}" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700 ease-in-out">
+                            <div class="absolute inset-0 bg-black/5 group-hover:bg-transparent transition duration-500"></div>
+                            
+                            <div class="absolute top-4 left-4">
+                                <span class="px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide {{ $badgeColor }} shadow-sm">
+                                    {{ $post->category }}
+                                </span>
+                            </div>
                         </div>
                         
-                        <div class="flex items-center gap-4 mb-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide {{ $badgeColor }}">
-                                {{ $post->category }}
-                            </span>
-                            <span class="text-gray-400 text-sm font-medium">
-                                {{ \Carbon\Carbon::parse($post->published_at)->translatedFormat('d M Y') }}
-                            </span>
+                        <div class="p-8 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 mb-4 text-gray-400 text-sm font-medium">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                {{ \Carbon\Carbon::parse($post->published_at)->translatedFormat('d F Y') }}
+                            </div>
+                            
+                            <h3 class="text-2xl font-bold text-blue-950 mb-4 group-hover:text-teal-600 transition-colors leading-snug">
+                                <a href="{{ route('posts.show', $post->slug) }}" class="focus:outline-none">
+                                    <span class="absolute inset-0" aria-hidden="true"></span>
+                                    {{ $post->title }}
+                                </a>
+                            </h3>
+                            
+                            <p class="text-gray-600 line-clamp-3 leading-relaxed mb-6 flex-grow">
+                                {{ $post->excerpt }}
+                            </p>
+                            
+                            <div class="mt-auto pt-4 border-t border-gray-100 flex items-center text-teal-600 font-bold text-sm">
+                                BACA SELENGKAPNYA 
+                                <svg class="w-4 h-4 ml-2 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </div>
                         </div>
-                        
-                        <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition leading-snug">
-                            <a href="{{ route('posts.show', $post->slug) }}">{{ $post->title }}</a>
-                        </h3>
-                        
-                        <p class="text-gray-600 line-clamp-2 text-lg mb-4">
-                            {{ $post->excerpt }}
-                        </p>
                     </article>
                 @endforeach
-            </div>
-            
-            <div class="mt-16 text-center">
-                <a href="#" class="inline-flex items-center text-blue-600 font-bold text-lg hover:text-blue-800 transition">
-                    Lihat Indeks Berita
-                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                </a>
             </div>
         </div>
     </section>
