@@ -10,28 +10,28 @@
                 label: 'AMC Pembangkit',
                 desc: 'Tingkatkan efisiensi dan keandalan mesin pembangkit Anda melalui layanan operasi dan pemeliharaan terbaik kami.',
                 link: '{{ route('services') }}',
-                img: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+                img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
             },
             {
                 title: 'Reliability',
                 label: 'Transmisi & Distribusi',
                 desc: 'Kami memastikan jaringan distribusi dan gardu induk beroperasi optimal untuk meminimalisir gangguan listrik.',
                 link: '{{ route('services') }}',
-                img: 'https://images.unsplash.com/photo-1544724569-5f546fa602b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+                img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
             },
             {
                 title: 'Innovation',
                 label: 'DRUPS & Beyond kWh',
                 desc: 'Solusi daya tanpa kedip (Zero Downtime) untuk industri kritis dan layanan pelanggan terintegrasi.',
                 link: '{{ route('services') }}',
-                img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+                img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
             },
             {
                 title: 'Society',
                 label: 'Penerang Nusantara',
                 desc: 'Berkomitmen memberikan akses energi yang merata di seluruh pelosok Indonesia Tengah dan Timur.',
                 link: '{{ route('about') }}',
-                img: 'https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'
+                img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
             }
         ],
         next() {
@@ -167,19 +167,19 @@
                         id: 1,
                         title: 'Mengelola 50+ Pembangkit Tersebar',
                         desc: 'Dari kepulauan terluar hingga pusat industri, kami memastikan mesin pembangkit beroperasi dengan keandalan (EAF) tinggi untuk menjaga pasokan energi nasional.',
-                        img: 'https://images.unsplash.com/photo-1581093588401-fbb62a02f120?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+                        img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
                     },
                     {
                         id: 2,
                         title: 'Memelihara Ribuan Kilo Jaringan',
                         desc: 'Menembus hutan dan melintasi sungai, tim teknis kami menjaga urat nadi transmisi dan distribusi (JTM/JTR) agar bebas dari gangguan kritis.',
-                        img: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+                        img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
                     },
                     {
                         id: 3,
                         title: 'Hadirkan Solusi Daya Tanpa Kedip',
                         desc: 'Melalui sistem DRUPS (Diesel Rotary Uninterruptible Power Supply), kami melindungi fasilitas vital seperti rumah sakit dan data center dari kedipan listrik sedetik pun.',
-                        img: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+                        img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
                     }
                 ]
              }">
@@ -282,7 +282,7 @@
                 </div>
 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="AMC Transmisi" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <img src="https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg" alt="AMC Transmisi" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
@@ -320,7 +320,7 @@
                 </div>
 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Penyedia Pembangkit" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <img src="https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg" alt="Penyedia Pembangkit" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
@@ -339,7 +339,7 @@
                 </div>
 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Beyond kWh" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <img src="https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg" alt="Beyond kWh" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
@@ -358,7 +358,7 @@
                 </div>
 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Pelayanan Pelanggan" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <img src="https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg" alt="Pelayanan Pelanggan" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/60 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
@@ -398,36 +398,71 @@
                 </p>
             </div>
             
-            <div class="relative max-w-5xl mx-auto">
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-gray-100">
-                    <img src="{{ asset('img/peta-wilayah.jpg') }}" 
-                         alt="Peta Wilayah Kerja PLN Nusa Daya" 
-                         class="w-full h-auto object-cover transform hover:scale-[1.02] transition duration-700">
-                    
-                    <div class="absolute inset-0 bg-blue-900/5 mix-blend-multiply pointer-events-none"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-4 order-2 lg:order-1">
+                    <div class="bg-white p-8 rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] border border-gray-100 relative overflow-hidden group hover:border-teal-500/30 transition-colors duration-300">
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-teal-50 rounded-bl-full -mr-10 -mt-10 transition-transform group-hover:scale-110"></div>
+                        
+                        <h4 class="font-bold text-blue-950 text-2xl mb-8 border-b-4 border-teal-500 pb-3 inline-block relative z-10">Area Operasional</h4>
+                        
+                        <ul class="space-y-6 relative z-10">
+                            <li class="flex items-start gap-4 group/item">
+                                <span class="flex h-4 w-4 relative mt-1.5 flex-shrink-0">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-4 w-4 bg-teal-500"></span>
+                                </span>
+                                <div>
+                                    <span class="block text-blue-950 font-bold text-lg group-hover/item:text-teal-600 transition-colors">Kalimantan</span>
+                                    <span class="text-sm text-gray-500">Pusat Operasional & IKN</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 group/item">
+                                <span class="flex h-4 w-4 relative mt-1.5 flex-shrink-0">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-4 w-4 bg-teal-500"></span>
+                                </span>
+                                <div>
+                                    <span class="block text-blue-950 font-bold text-lg group-hover/item:text-teal-600 transition-colors">Sulawesi</span>
+                                    <span class="text-sm text-gray-500">Jaringan Transmisi Utama</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 group/item">
+                                <span class="flex h-4 w-4 relative mt-1.5 flex-shrink-0">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-4 w-4 bg-teal-500"></span>
+                                </span>
+                                <div>
+                                    <span class="block text-blue-950 font-bold text-lg group-hover/item:text-teal-600 transition-colors">Nusa Tenggara</span>
+                                    <span class="text-sm text-gray-500">Pembangkit EBT & Wisata</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4 group/item">
+                                <span class="flex h-4 w-4 relative mt-1.5 flex-shrink-0">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-4 w-4 bg-teal-500"></span>
+                                </span>
+                                <div>
+                                    <span class="block text-blue-950 font-bold text-lg group-hover/item:text-teal-600 transition-colors">Maluku & Papua</span>
+                                    <span class="text-sm text-gray-500">Elektrifikasi Daerah 3T</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="absolute -left-4 md:-left-12 bottom-10 bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-gray-100 z-10 hidden sm:block">
-                    <h4 class="font-bold text-blue-950 text-xl mb-4 border-b-2 border-teal-500 pb-2 inline-block">Area Operasional</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3 text-gray-600 font-medium">
-                            <span class="flex h-3 w-3 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span></span>
-                            Kalimantan
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-600 font-medium">
-                            <span class="flex h-3 w-3 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span></span>
-                            Sulawesi
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-600 font-medium">
-                            <span class="flex h-3 w-3 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span></span>
-                            Nusa Tenggara
-                        </li>
-                        <li class="flex items-center gap-3 text-gray-600 font-medium">
-                            <span class="flex h-3 w-3 relative"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-teal-500"></span></span>
-                            Maluku & Papua
-                        </li>
-                    </ul>
+                <div class="lg:col-span-8 order-1 lg:order-2">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-1 ring-gray-100 transform hover:scale-[1.01] transition duration-700 bg-blue-50">
+                        <img src="{{ asset('img/peta-wilayah.jpg') }}" 
+                             alt="Peta Wilayah Kerja PLN Nusa Daya" 
+                             class="w-full h-auto object-cover relative z-10">
+                        
+                        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 z-0"></div>
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent pointer-events-none z-20"></div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
