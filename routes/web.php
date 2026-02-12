@@ -25,3 +25,12 @@ Route::get('/tata-kelola', function () {
     $documents = Document::all()->groupBy('category');
     return view('governance', ['documents' => $documents]);
 })->name('governance');
+
+Route::get('/berita', function () {
+    $posts = Post::latest()->filter(request(['search']))->paginate(9)->withQueryString();
+    return view('news', ['posts' => $posts]);
+})->name('news.index');
+
+Route::get('/berita/{post:slug}', function (Post $post) {
+    return view('post', ['post' => $post]);
+})->name('posts.show');

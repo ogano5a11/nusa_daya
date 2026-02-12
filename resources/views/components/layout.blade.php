@@ -151,7 +151,7 @@
                         </div>
 
                         <a href="#" class="h-full px-4 flex items-center text-gray-700 font-semibold hover:text-teal-600 transition hover:border-b-4 hover:border-teal-500">Pengadaan</a>
-                        <a href="#" class="h-full px-4 flex items-center text-gray-700 font-semibold hover:text-teal-600 transition hover:border-b-4 hover:border-teal-500">Berita</a>
+                        <a href="{{ route('news.index') }}" class="h-full px-4 flex items-center text-gray-700 font-semibold hover:text-teal-600 transition hover:border-b-4 hover:border-teal-500">Berita</a>
 
                     </div>
 

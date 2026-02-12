@@ -439,7 +439,7 @@
                     <h2 class="text-4xl md:text-5xl font-extrabold text-blue-950 mb-4">Media & Informasi</h2>
                     <p class="text-lg text-gray-600">Berita dan kabar terbaru dari aktivitas perusahaan kami.</p>
                 </div>
-                <a href="#" class="inline-flex items-center font-bold text-blue-950 hover:text-teal-600 transition-colors group px-6 py-3 border-2 border-blue-950 hover:border-teal-600 rounded-full">
+                <a href="{{ route('news.index') }}" class="inline-flex items-center font-bold text-blue-950 hover:text-teal-600 transition-colors group px-6 py-3 border-2 border-blue-950 hover:border-teal-600 rounded-full">
                     Lihat Semua Berita
                     <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                 </a>
