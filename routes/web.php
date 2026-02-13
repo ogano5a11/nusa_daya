@@ -41,3 +41,8 @@ Route::get('/tata-kelola', function () {
 Route::get('/manajemen', function () {
     return view('management');
 })->name('management');
+
+// Halaman Anak Perusahaan
+Route::get('/anak-perusahaan', function () {
+    return view('subsidiaries');
+})->name('subsidiaries');
