@@ -8,7 +8,6 @@
         <div class="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-900/90 to-blue-900/80"></div>
         
         <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <span class="inline-block py-1 px-3 rounded-full bg-teal-500/20 border border-teal-500/30 text-teal-300 text-xs font-bold tracking-widest uppercase mb-4">Leadership Team</span>
             <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-6">Jajaran Manajemen</h1>
             <p class="text-blue-100 text-lg max-w-2xl mx-auto leading-relaxed">
                 Dipimpin oleh para profesional berpengalaman yang berdedikasi untuk mewujudkan visi PLN Nusa Daya.
@@ -51,46 +50,54 @@
                 detailImage: '{{ asset('img/dirut.jpg') }}',
                 bio: 'Diangkat sebagai Direktur Utama PT PLN Nusa Daya. Beliau bertanggung jawab penuh dalam memimpin arah strategis perusahaan.',
                 education: [
-                    'Master of Business Administration, Universitas Gadjah Mada',
-                    'Sarjana Teknik Mesin, Universitas Brawijaya'
+                    'S2 Master of Business Administration, UNIVERSITAS TENAGA NASIONAL MALAYSIA (2006)',
+                    'Sarjana Teknik Mesin, UNIVERSITAS SRIWIJAYA (1992)'
                 ],
                 career: [
-                    'Vice President Operasi Pembangkit (2020-2023)',
-                    'Manajer Senior Pengadaan (2018-2020)'
+                    'Direktur Utama PT PLN Nusa Daya (2023-sekarang)',
+                    'Direktur Utama PT PLN Tarakan (2023)',
+                    'Senior Specialist Direktorat Distribusi PT PLN (PERSERO) KANTOR PUSAT PT PLN (PERSERO) (2022-2023).',
+                    'EVP RJP Divisi Perencanaan Dan Pengendalian Regional Jawa, Madura Dan Bali Direktorat Transmisi Dan Perencanaan Sistem PT PLN (PERSERO) KANTOR PUSAT PT PLN (PERSERO) (2021 – 2023).',
+                    'EVP RETAIL REG JAMALI Divisi Retail Regional Jawa, Madura Dan Bali Direktorat Bisnis Regional Jawa, Madura Dan Bali PT PLN (PERSERO) KANTOR PUSAT PT PLN (PERSERO) (2020 – 2021).'
                 ]
             },
             {
                 id: 3,
-                name: 'Nama Direktur Keuangan',
+                name: 'Zulhendri',
                 role: 'Direktur Keuangan & ADM',
                 group: 'Direksi',
                 image: '{{ asset('img/dirkeu.jpg') }}',
                 detailImage: '{{ asset('img/dirkeu.jpg') }}',
                 bio: 'Profesional keuangan dengan sertifikasi CFA dan pengalaman lebih dari 15 tahun dalam pengelolaan aset dan risiko korporasi.',
                 education: [
-                    'S2 Akuntansi, Universitas Airlangga',
-                    'S1 Ekonomi, Universitas Diponegoro'
+                    'S2 Master of Finance, Curtin University of Technology, Perth, Australia (2010)',
+                    'Sarjana Akuntansi, Universitas Andalas (2001)'
                 ],
                 career: [
-                    'Senior Manager Keuangan (2019-2022)',
-                    'Manager Anggaran (2015-2019)'
+                    'Direktur Keuangan, Manajemen Risiko, dan Human Capital PT PLN Nusa Daya (2023-sekarang)',
+                    'Direktur Keuangan & Administrasi PT PLN Tarakan (2019-2023)',
+                    'Manajer Portfolio Management 1 pada Bidang Portfolio Management Divisi Portfolio Management Direktorat Perencanaan Korporat PT PLN (Persero) Kantor Pusat (2018)',
+                    'Deputi Manajer Kemitraan Bisnis pada Bidang Kemitraan Bisnis Divisi Transaksi Tenaga Listrik dan Kemitraan Bisnis Direktorat Perencanaan Korporat PT PLN (Persero) Kantor Pusat (2016-2018)',
+                    'Deputi Manajer Anggaran dan Keuangan pada Bidang Keuangan, SDM, dan Administrasi PT PLN (Persero) Pusat Pemeliharaan Ketenagalistrikan (2016)'
                 ]
             },
             {
                 id: 4,
-                name: 'Nama Direktur Operasi',
+                name: 'Reny Wahyu Setiaswan',
                 role: 'Direktur Operasi',
                 group: 'Direksi',
                 image: '{{ asset('img/dirop.jpg') }}',
                 detailImage: '{{ asset('img/dirop.jpg') }}',
                 bio: 'Memiliki keahlian mendalam dalam manajemen operasi sistem tenaga listrik dan pemeliharaan aset distribusi.',
                 education: [
-                    'S2 Teknik Elektro, Institut Teknologi Sepuluh Nopember',
-                    'S1 Teknik Elektro, Universitas Hasanuddin'
+                    'Sarjana Teknik Listrik, S.T.TEKNIK YPLN (1996)'
                 ],
                 career: [
-                    'Manager UP3 Makassar (2021-2023)',
-                    'Manager Bagian Jaringan (2017-2021)'
+                    'Direktur Operasi & Pengembangan Usaha PT PLN Nusa Daya (2023-sekarang)',
+                    'Direktur Operasi & Pengembangan Usaha PT PLN Tarakan (2023)',
+                    'VP KIN dan STD KBJ DIST Bidang Kinerja Dan Standarisasi Kebijakan Distribusi Divisi Perencanaan Strategis Distribusi Direktorat Distribusi PT PLN (Persero) Kantor Pusat PT PLN (Persero) (2022–2023)',
+                    'SRM DIST Bidang Distribusi PT PLN (Persero) Unit Induk Wilayah Sumatera Selatan, Jambi dan Bengkulu PT PLN (Persero) (2022)',
+                    'SRM REN Bidang Perencanaan PT PLN (Persero) Unit Induk Wilayah Sumatera Utara PT PLN (Persero) (2021–2022)'
                 ]
             }
         ],
