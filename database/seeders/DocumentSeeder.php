@@ -11,15 +11,22 @@ class DocumentSeeder extends Seeder
     {
         $documents = [
             ['title' => 'Pedoman Tata Kelola Perusahaan (GCG)', 'category' => 'Pedoman GCG', 'year' => 2024],
-            ['title' => 'Board Manual Direksi & Komisaris', 'category' => 'Pedoman GCG', 'year' => 2024],
-            ['title' => 'Code of Conduct (Kode Etik)', 'category' => 'Pedoman GCG', 'year' => 2023],
+            ['title' => 'Code of Conduct (Pedoman Perilaku)', 'category' => 'Pedoman GCG', 'year' => 2024],
+            ['title' => 'Piagam Dewan Komisaris (Board Manual)', 'category' => 'Pedoman GCG', 'year' => 2024],
+            ['title' => 'Piagam Direksi (Board Manual)', 'category' => 'Pedoman GCG', 'year' => 2024],
             
+            ['title' => 'Pedoman Pengendalian Gratifikasi', 'category' => 'Kepatuhan & SMAP', 'year' => 2024],
+            ['title' => 'Sistem Manajemen Anti Penyuapan (ISO 37001)', 'category' => 'Kepatuhan & SMAP', 'year' => 2023],
+            ['title' => 'Laporan Kepatuhan LHKPN (100% Lapor)', 'category' => 'Kepatuhan & SMAP', 'year' => 2024],
+            ['title' => 'Pedoman Whistle Blowing System (WBS)', 'category' => 'Kepatuhan & SMAP', 'year' => 2024],
+
             ['title' => 'Laporan Tahunan (Annual Report) 2024', 'category' => 'Laporan Perusahaan', 'year' => 2024],
-            ['title' => 'Sustainability Report 2024', 'category' => 'Laporan Perusahaan', 'year' => 2024],
+            ['title' => 'Laporan Keberlanjutan (Sustainability Report) 2024', 'category' => 'Laporan Perusahaan', 'year' => 2024],
             
             ['title' => 'Piagam Audit Internal', 'category' => 'Kebijakan & Piagam', 'year' => 2025],
             ['title' => 'Piagam Komite Manajemen Risiko', 'category' => 'Kebijakan & Piagam', 'year' => 2024],
-            ['title' => 'Pedoman Transparansi Informasi', 'category' => 'Kebijakan & Piagam', 'year' => 2023],
+            ['title' => 'Kebijakan Pengembangan Pegawai', 'category' => 'Kebijakan & Piagam', 'year' => 2024],
+            ['title' => 'Kebijakan TJSL & Komunikasi Korporat', 'category' => 'Kebijakan & Piagam', 'year' => 2023],
         ];
 
         foreach ($documents as $doc) {
@@ -27,7 +34,7 @@ class DocumentSeeder extends Seeder
                 'title' => $doc['title'],
                 'category' => $doc['category'],
                 'year' => $doc['year'],
-                'file_path' => '#', // Placeholder link download
+                'file_path' => '#',
                 'created_at' => now(),
                 'updated_at' => now(),
             ]);
