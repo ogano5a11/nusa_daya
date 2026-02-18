@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pln-primary: #00A2B9;
+  --color-pln-dark: #035B71;
+  --color-pln-blue: #00AFF0;
+  --color-pln-yellow: #FFFF00;
+  --color-pln-red: #FF0000;
+
+  --color-brand-orange: #FF7F00;
+
+  --font-sans: "Myriad Pro", "Segoe UI", sans-serif;
+}
