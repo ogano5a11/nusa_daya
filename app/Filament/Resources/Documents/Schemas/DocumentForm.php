@@ -3,6 +3,9 @@
 namespace App\Filament\Resources\Documents\Schemas;
 
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Section;
 use Filament\Schemas\Schema;
 
 class DocumentForm
@@ -11,14 +14,36 @@ class DocumentForm
     {
         return $schema
             ->components([
-                TextInput::make('title')
-                    ->required(),
-                TextInput::make('category')
-                    ->required(),
-                TextInput::make('file_path')
-                    ->required(),
-                TextInput::make('year')
-                    ->default(null),
+                Section::make('Informasi & File Dokumen')
+                    ->schema([
+                        TextInput::make('title')
+                            ->label('Judul Dokumen')
+                            ->required(),
+
+                        Select::make('category')
+                            ->label('Kategori Tata Kelola')
+                            ->options([
+                                'Pedoman GCG' => 'Pedoman GCG',
+                                'Kepatuhan & SMAP' => 'Kepatuhan & SMAP',
+                                'Laporan Perusahaan' => 'Laporan Perusahaan',
+                                'Kebijakan & Piagam' => 'Kebijakan & Piagam',
+                            ])
+                            ->required(),
+
+                        TextInput::make('year')
+                            ->label('Tahun')
+                            ->numeric()
+                            ->minValue(2000)
+                            ->maxValue(date('Y') + 1)
+                            ->default(date('Y')),
+
+                        FileUpload::make('file_path')
+                            ->label('Upload File Dokumen (PDF)')
+                            ->acceptedFileTypes(['application/pdf'])
+                            ->directory('documents')
+                            ->required()
+                            ->columnSpanFull(),
+                    ])->columns(2),
             ]);
     }
 }
