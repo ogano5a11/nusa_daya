@@ -5,7 +5,7 @@ namespace App\Filament\Resources\Documents\Schemas;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\FileUpload;
-use Filament\Forms\Components\Section;
+use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 
 class DocumentForm
@@ -18,7 +18,8 @@ class DocumentForm
                     ->schema([
                         TextInput::make('title')
                             ->label('Judul Dokumen')
-                            ->required(),
+                            ->required()
+                            ->columnSpanFull(),
 
                         Select::make('category')
                             ->label('Kategori Tata Kelola')
