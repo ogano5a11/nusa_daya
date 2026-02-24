@@ -266,7 +266,7 @@
 
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
-                            <svg class="w-7 h-7 text-pln-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <svg class="w-7 h-7 text-pln-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">AMC Pembangkit</h3>
                         
@@ -274,7 +274,7 @@
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Pengoperasian dan pemeliharaan mesin pembangkit untuk efisiensi tinggi, penjagaan EAF, dan monitoring aset secara realtime.
                             </p>
-                            <a href="{{ route('services.amc-pembangkit') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.amc-pembangkit') }}" class="inline-flex items-center text-pln-blue hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -286,14 +286,14 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
-                            <svg class="w-7 h-7 text-pln-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
+                            <svg class="w-7 h-7 text-pln-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">AMC Transmisi</h3>
                         <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Jasa operasi dan pemeliharaan Gardu Induk (GI) serta aset transmisi untuk menjamin keandalan penyaluran listrik tegangan tinggi.
                             </p>
-                            <a href="{{ route('services.transmisi-distribusi') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.transmisi-distribusi') }}" class="inline-flex items-center text-pln-blue hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -305,14 +305,14 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
-                            <svg class="w-7 h-7 text-pln-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                            <svg class="w-7 h-7 text-pln-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">AMC Distribusi</h3>
                         <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Pemeliharaan jaringan tegangan menengah dan rendah serta layanan teknik (Yantek) untuk kualitas listrik sampai ke pelanggan.
                             </p>
-                            <a href="{{ route('services.transmisi-distribusi') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.transmisi-distribusi') }}" class="inline-flex items-center text-pln-blue hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -324,14 +324,14 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
-                            <svg class="w-7 h-7 text-pln-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                            <svg class="w-7 h-7 text-pln-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">Penyedia Pembangkit</h3>
                         <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Menyediakan layanan penyediaan energi listrik terpadu kapasitas menengah khusus untuk wilayah Indonesia Timur.
                             </p>
-                            <a href="{{ route('services.amc-pembangkit') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.amc-pembangkit') }}" class="inline-flex items-center text-pln-blue hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -343,14 +343,14 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
-                            <svg class="w-7 h-7 text-pln-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                            <svg class="w-7 h-7 text-pln-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">Beyond kWh</h3>
                         <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Layanan inovatif kelistrikan premium, termasuk teknologi DRUPS untuk jaminan pasokan daya tanpa kedip (Zero Downtime).
                             </p>
-                            <a href="{{ route('services.drups') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.drups') }}" class="inline-flex items-center text-pln-blue hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -362,14 +362,14 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
-                            <svg class="w-7 h-7 text-pln-yellow" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                            <svg class="w-7 h-7 text-pln-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                         </div>
                         <h3 class="text-2xl font-bold text-white mb-2 transform group-hover:-translate-y-2 transition-transform duration-500">Pelayanan Pelanggan</h3>
                         <div class="overflow-hidden max-h-0 opacity-0 group-hover:max-h-[150px] group-hover:opacity-100 transition-all duration-700 ease-in-out">
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Manajemen pelanggan komprehensif, mulai dari pembacaan meter, penagihan, hingga instalasi pelanggan via ListriQu.
                             </p>
-                            <a href="{{ route('services.pelanggan') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.pelanggan') }}" class="inline-flex items-center text-pln-blue hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
