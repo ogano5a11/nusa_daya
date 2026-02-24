@@ -9,21 +9,21 @@
                 title: 'Business',
                 label: 'AMC Pembangkit',
                 desc: 'Tingkatkan efisiensi dan keandalan mesin pembangkit Anda melalui layanan operasi dan pemeliharaan terbaik kami.',
-                link: '{{ route('services') }}',
+                link: '{{ route('services.amc-pembangkit') }}', // <-- TAUTAN DIPERBARUI
                 img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
             },
             {
                 title: 'Reliability',
                 label: 'Transmisi & Distribusi',
                 desc: 'Kami memastikan jaringan distribusi dan gardu induk beroperasi optimal untuk meminimalisir gangguan listrik.',
-                link: '{{ route('services') }}',
+                link: '{{ route('services.transmisi-distribusi') }}', // <-- TAUTAN DIPERBARUI
                 img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
             },
             {
                 title: 'Innovation',
                 label: 'DRUPS & Beyond kWh',
                 desc: 'Solusi daya tanpa kedip (Zero Downtime) untuk industri kritis dan layanan pelanggan terintegrasi.',
-                link: '{{ route('services') }}',
+                link: '{{ route('services.drups') }}', // <-- TAUTAN DIPERBARUI
                 img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
             },
             {
@@ -93,13 +93,13 @@
 
         <div class="relative z-20 bg-white w-full lg:max-w-[95%] lg:ml-auto lg:rounded-tl-2xl shadow-2xl flex flex-col lg:flex-row border-t-4 border-pln-yellow">
             
-            <div class="flex-grow p-8 pb-20 lg:p-12 lg:pb-28 flex flex-col md:flex-row md:items-center gap-8">
-                <div class="flex-grow">
+            <div class="flex-grow p-8 pt-10 lg:p-12 pb-24 lg:pb-32 flex flex-col md:flex-row md:items-start gap-8">
+                <div class="flex-grow mt-1">
                     <h2 class="text-3xl lg:text-4xl font-extrabold text-pln-dark mb-3" x-text="slides[active].label"></h2>
                     <p class="text-gray-600 text-lg max-w-2xl leading-relaxed" x-text="slides[active].desc"></p>
                 </div>
                 
-                <div class="shrink-0 border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-8">
+                <div class="shrink-0 border-t md:border-t-0 md:border-l border-gray-200 pt-6 md:pt-0 md:pl-8 mt-1">
                     <a :href="slides[active].link" class="inline-flex items-center bg-pln-primary text-white px-8 py-4 rounded-full font-bold hover:bg-pln-dark hover:scale-105 hover:shadow-lg shadow-pln-primary/30 transition-all duration-300 group">
                         Explore Now
                         <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
@@ -107,8 +107,8 @@
                 </div>
             </div>
 
-            <div class="hidden lg:flex flex-col justify-center w-80 bg-gray-50 p-8 pb-20 lg:pb-28 border-l border-gray-200 lg:rounded-tl-none">
-                <p class="text-pln-dark font-extrabold text-lg mb-4">Discover Our Company</p>
+            <div class="hidden lg:flex flex-col justify-start w-80 bg-gray-50 p-8 pt-10 lg:p-12 pb-24 lg:pb-32 border-l border-gray-200 lg:rounded-tl-none">
+                <p class="text-pln-dark font-extrabold text-lg mb-4 mt-1">Discover Our Company</p>
                 <div class="flex flex-col gap-3">
                     <a href="{{ route('about') }}" class="text-gray-600 hover:text-pln-primary font-medium flex justify-between items-center group transition">
                         Profil Perusahaan
@@ -274,7 +274,7 @@
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Pengoperasian dan pemeliharaan mesin pembangkit untuk efisiensi tinggi, penjagaan EAF, dan monitoring aset secara realtime.
                             </p>
-                            <a href="{{ route('services') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.amc-pembangkit') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -293,7 +293,7 @@
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Jasa operasi dan pemeliharaan Gardu Induk (GI) serta aset transmisi untuk menjamin keandalan penyaluran listrik tegangan tinggi.
                             </p>
-                            <a href="{{ route('services') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.transmisi-distribusi') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -312,7 +312,7 @@
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Pemeliharaan jaringan tegangan menengah dan rendah serta layanan teknik (Yantek) untuk kualitas listrik sampai ke pelanggan.
                             </p>
-                            <a href="{{ route('services') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.transmisi-distribusi') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -331,7 +331,7 @@
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Menyediakan layanan penyediaan energi listrik terpadu kapasitas menengah khusus untuk wilayah Indonesia Timur.
                             </p>
-                            <a href="{{ route('services') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.amc-pembangkit') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -350,7 +350,7 @@
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Layanan inovatif kelistrikan premium, termasuk teknologi DRUPS untuk jaminan pasokan daya tanpa kedip (Zero Downtime).
                             </p>
-                            <a href="{{ route('services') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.drups') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -369,7 +369,7 @@
                             <p class="text-white/80 text-sm leading-relaxed mb-6 border-t border-white/20 pt-4 mt-2">
                                 Manajemen pelanggan komprehensif, mulai dari pembacaan meter, penagihan, hingga instalasi pelanggan via ListriQu.
                             </p>
-                            <a href="{{ route('services') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
+                            <a href="{{ route('services.pelanggan') }}" class="inline-flex items-center text-pln-yellow hover:text-white font-bold text-sm tracking-wide uppercase transition-colors">
                                 Pelajari Detail <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>

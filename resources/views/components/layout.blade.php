@@ -144,13 +144,14 @@
                         </div>
 
                         <div class="group relative inline-block h-full"> 
-                            <button class="h-full px-4 flex items-center text-gray-700 font-semibold hover:text-pln-primary transition group-hover:border-b-4 group-hover:border-pln-primary">
+                            <a href="{{ route('services') }}" class="h-full px-4 flex items-center text-gray-700 font-semibold hover:text-pln-primary transition group-hover:border-b-4 group-hover:border-pln-primary">
                                 Layanan Bisnis
                                 <svg class="w-4 h-4 ml-1 transform group-hover:rotate-180 transition duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                            </button>
+                            </a>
                             <div class="absolute left-0 mt-0 w-80 bg-white shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border-t-4 border-pln-primary rounded-b-xl" style="top: 100%;">
                                 <div class="flex flex-col py-2">
-                                    <a href="{{ route('services') }}" class="flex items-center gap-4 px-6 py-4 hover:bg-pln-primary/5 transition group/link border-b border-gray-50 last:border-none">
+                                    
+                                    <a href="{{ route('services.amc-pembangkit') }}" class="flex items-center gap-4 px-6 py-4 hover:bg-pln-primary/5 transition group/link border-b border-gray-50 last:border-none">
                                         <div class="bg-pln-primary/10 text-pln-primary p-2.5 rounded-lg group-hover/link:bg-pln-primary group-hover/link:text-white transition shrink-0">
                                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                                         </div>
@@ -159,7 +160,8 @@
                                             <p class="text-xs text-gray-500 leading-snug">Operasi & Pemeliharaan Mesin.</p>
                                         </div>
                                     </a>
-                                    <a href="{{ route('services') }}" class="flex items-center gap-4 px-6 py-4 hover:bg-pln-primary/5 transition group/link border-b border-gray-50 last:border-none">
+                                    
+                                    <a href="{{ route('services.transmisi-distribusi') }}" class="flex items-center gap-4 px-6 py-4 hover:bg-pln-primary/5 transition group/link border-b border-gray-50 last:border-none">
                                         <div class="bg-pln-primary/10 text-pln-primary p-2.5 rounded-lg group-hover/link:bg-pln-primary group-hover/link:text-white transition shrink-0">
                                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                                         </div>
@@ -168,15 +170,27 @@
                                             <p class="text-xs text-gray-500 leading-snug">Pemeliharaan Jaringan & Yantek.</p>
                                         </div>
                                     </a>
-                                    <a href="{{ route('services') }}" class="flex items-center gap-4 px-6 py-4 hover:bg-pln-primary/5 transition group/link border-b border-gray-50 last:border-none">
+                                    
+                                    <a href="{{ route('services.drups') }}" class="flex items-center gap-4 px-6 py-4 hover:bg-pln-primary/5 transition group/link border-b border-gray-50 last:border-none">
                                         <div class="bg-pln-primary/10 text-pln-primary p-2.5 rounded-lg group-hover/link:bg-pln-primary group-hover/link:text-white transition shrink-0">
                                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                                         </div>
                                         <div>
-                                            <h4 class="font-bold text-gray-900 group-hover/link:text-pln-dark text-sm mb-0.5">DRUPS & ListriQu</h4>
-                                            <p class="text-xs text-gray-500 leading-snug">Daya Tanpa Kedip & Instalasi.</p>
+                                            <h4 class="font-bold text-gray-900 group-hover/link:text-pln-dark text-sm mb-0.5">DRUPS & Beyond kWh</h4>
+                                            <p class="text-xs text-gray-500 leading-snug">Daya Tanpa Kedip & Inovasi.</p>
                                         </div>
                                     </a>
+
+                                    <a href="{{ route('services.pelanggan') }}" class="flex items-center gap-4 px-6 py-4 hover:bg-pln-primary/5 transition group/link border-b border-gray-50 last:border-none">
+                                        <div class="bg-pln-primary/10 text-pln-primary p-2.5 rounded-lg group-hover/link:bg-pln-primary group-hover/link:text-white transition shrink-0">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-bold text-gray-900 group-hover/link:text-pln-dark text-sm mb-0.5">Pelayanan Pelanggan</h4>
+                                            <p class="text-xs text-gray-500 leading-snug">ListriQu, Cater & Manajemen.</p>
+                                        </div>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
@@ -245,27 +259,27 @@
                     </h4>
                     <ul class="space-y-4 text-sm text-white/80">
                         <li>
-                            <a href="{{ route('services') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
+                            <a href="{{ route('services.amc-pembangkit') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-pln-yellow mr-3 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"></span>
                                 <span class="transform group-hover:translate-x-1 transition-transform duration-300">AMC Pembangkit</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('services') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
+                            <a href="{{ route('services.transmisi-distribusi') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-pln-yellow mr-3 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"></span>
                                 <span class="transform group-hover:translate-x-1 transition-transform duration-300">Transmisi & Distribusi</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('services') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
+                            <a href="{{ route('services.drups') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-pln-yellow mr-3 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"></span>
-                                <span class="transform group-hover:translate-x-1 transition-transform duration-300">DRUPS (Tanpa Kedip)</span>
+                                <span class="transform group-hover:translate-x-1 transition-transform duration-300">DRUPS & Beyond kWh</span>
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('services') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
+                            <a href="{{ route('services.pelanggan') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-pln-yellow mr-3 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"></span>
-                                <span class="transform group-hover:translate-x-1 transition-transform duration-300">ListriQu & Pelanggan</span>
+                                <span class="transform group-hover:translate-x-1 transition-transform duration-300">Pelayanan Pelanggan</span>
                             </a>
                         </li>
                     </ul>
@@ -283,9 +297,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('about') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
+                            <a href="{{ route('management') }}" class="group flex items-center hover:text-pln-yellow transition-colors duration-300">
                                 <span class="w-1.5 h-1.5 rounded-full bg-pln-yellow mr-3 opacity-0 group-hover:opacity-100 transform -translate-x-2 group-hover:translate-x-0 transition-all duration-300"></span>
-                                <span class="transform group-hover:translate-x-1 transition-transform duration-300">Manajemen</span>
+                                <span class="transform group-hover:translate-x-1 transition-transform duration-300">Direksi & Komisaris</span>
                             </a>
                         </li>
                         <li>
