@@ -36,7 +36,6 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     @foreach($posts as $post)
                         @php
-                            // Menyesuaikan warna label dengan kategori yang ada di PostForm
                             $badgeColor = match($post->category) {
                                 'Berita Utama' => 'bg-green-100 text-green-800',
                                 'Info Terkini' => 'bg-yellow-100 text-yellow-800',
@@ -45,7 +44,6 @@
                                 default => 'bg-gray-100 text-gray-800',
                             };
                             
-                            // Logika menampilkan gambar: Jika ada di database, ambil dari folder storage, jika tidak pakai logo default
                             $imageUrl = $post->image ? asset('storage/' . $post->image) : asset('img/logo-pln-nusaDaya.png');
                         @endphp
 
