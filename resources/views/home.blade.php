@@ -59,7 +59,7 @@
                      x-transition.opacity.duration.1000ms 
                      class="absolute inset-0 w-full h-full object-cover" alt="Banner">
             </template>
-            <div class="absolute inset-0 bg-gradient-to-r from-pln-dark/90 via-pln-dark/50 to-transparent"></div>
+            <div class="absolute inset-0 bg-gradient-to-r from-blue-500/80 via-blue-500/50 to-transparent"></div>
         </div>
 
         <div class="relative z-10 flex-grow flex flex-col justify-end pb-12">

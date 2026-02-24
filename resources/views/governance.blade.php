@@ -52,32 +52,37 @@
                 <p class="text-gray-600 mt-2">Unduh dokumen tata kelola, laporan, dan kebijakan perusahaan.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                @foreach($documents as $category => $docs)
-                <div class="bg-white rounded-xl shadow-md overflow-hidden border-t-4 border-blue-600 hover:-translate-y-1 transition duration-300">
-                    <div class="p-6 bg-blue-50 border-b border-blue-100 flex justify-between items-center">
-                        <h3 class="font-bold text-lg text-blue-900">{{ $category }}</h3>
-                        <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+            @if($documents->count() > 0)
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    @foreach($documents as $category => $docs)
+                    <div class="bg-white rounded-xl shadow-md overflow-hidden border-t-4 border-blue-600 hover:-translate-y-1 transition duration-300">
+                        <div class="p-6 bg-blue-50 border-b border-blue-100 flex justify-between items-center">
+                            <h3 class="font-bold text-lg text-blue-900">{{ $category }}</h3>
+                            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                        </div>
+                        
+                        <ul class="divide-y divide-gray-100">
+                            @foreach($docs as $doc)
+                            <li class="p-4 hover:bg-gray-50 flex justify-between items-center group">
+                                <div>
+                                    <p class="text-sm font-medium text-gray-800 group-hover:text-blue-600 transition">{{ $doc->title }}</p>
+                                    <span class="text-xs text-gray-400">Tahun: {{ $doc->year }}</span>
+                                </div>
+                                <a href="{{ asset('storage/' . $doc->file_path) }}" target="_blank" class="bg-gray-100 text-gray-500 p-2 rounded-full hover:bg-blue-600 hover:text-white transition" title="Lihat/Unduh PDF">
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                </a>
+                            </li>
+                            @endforeach
+                        </ul>
                     </div>
-                    
-                    <ul class="divide-y divide-gray-100">
-                        @foreach($docs as $doc)
-                        <li class="p-4 hover:bg-gray-50 flex justify-between items-center group">
-                            <div>
-                                <p class="text-sm font-medium text-gray-800 group-hover:text-blue-600 transition">{{ $doc->title }}</p>
-                                <span class="text-xs text-gray-400">Tahun: {{ $doc->year }}</span>
-                            </div>
-                            <a href="{{ $doc->file_path }}" class="bg-gray-100 text-gray-500 p-2 rounded-full hover:bg-blue-600 hover:text-white transition" title="Download">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-                            </a>
-                        </li>
-                        @endforeach
-                    </ul>
+                    @endforeach
                 </div>
-                @endforeach
+            @else
+                <div class="text-center py-10">
+                    <p class="text-gray-500">Belum ada dokumen yang dipublikasikan.</p>
+                </div>
+            @endif
 
-            </div>
         </div>
     </section>
 </x-layout>
