@@ -309,7 +309,7 @@
                 </p>
                 <div class="flex gap-6 text-sm text-white/50">
                     <a href="#" class="hover:text-pln-yellow transition-colors">Syarat & Ketentuan</a>
-                    <a href="#" class="hover:text-pln-yellow transition-colors">Kebijakan Privasi</a>
+                    <a href="{{ route('privacy') }}" class="hover:text-pln-yellow transition-colors">Kebijakan Privasi</a>
                 </div>
             </div>
             

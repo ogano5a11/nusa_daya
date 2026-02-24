@@ -66,3 +66,8 @@ Route::get('/manajemen', function () {
 Route::get('/anak-perusahaan', function () {
     return view('subsidiaries');
 })->name('subsidiaries');
+
+// Halaman Kebijakan Privasi
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy');
