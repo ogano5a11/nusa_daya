@@ -9,29 +9,29 @@
                 title: 'Business',
                 label: 'AMC Pembangkit',
                 desc: 'Tingkatkan efisiensi dan keandalan mesin pembangkit Anda melalui layanan operasi dan pemeliharaan terbaik kami.',
-                link: '{{ route('services.amc-pembangkit') }}', // <-- TAUTAN DIPERBARUI
-                img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
+                link: '{{ route('services.amc-pembangkit') }}',
+                img: '{{ asset('img/foto_home_bisnis.jpg') }}'
             },
             {
                 title: 'Reliability',
                 label: 'Transmisi & Distribusi',
                 desc: 'Kami memastikan jaringan distribusi dan gardu induk beroperasi optimal untuk meminimalisir gangguan listrik.',
-                link: '{{ route('services.transmisi-distribusi') }}', // <-- TAUTAN DIPERBARUI
-                img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
+                link: '{{ route('services.transmisi-distribusi') }}',
+                img: '{{ asset('img/foto_home_reliability.jpg') }}'
             },
             {
                 title: 'Innovation',
                 label: 'DRUPS & Beyond kWh',
                 desc: 'Solusi daya tanpa kedip (Zero Downtime) untuk industri kritis dan layanan pelanggan terintegrasi.',
-                link: '{{ route('services.drups') }}', // <-- TAUTAN DIPERBARUI
-                img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
+                link: '{{ route('services.drups') }}',
+                img: '{{ asset('img/foto_home_innovation.jpeg') }}'
             },
             {
                 title: 'Society',
                 label: 'Penerang Nusantara',
                 desc: 'Berkomitmen memberikan akses energi yang merata di seluruh pelosok Indonesia Tengah dan Timur.',
                 link: '{{ route('about') }}',
-                img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
+                img: '{{ asset('img/foto_home_society.jpg') }}'
             }
         ],
         next() {
@@ -167,19 +167,19 @@
                         id: 1,
                         title: 'Mengelola 50+ Pembangkit Tersebar',
                         desc: 'Dari kepulauan terluar hingga pusat industri, kami memastikan mesin pembangkit beroperasi dengan keandalan (EAF) tinggi untuk menjaga pasokan energi nasional.',
-                        img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
+                        img: '{{ asset('img/foto_home_innovation.jpeg') }}'
                     },
                     {
                         id: 2,
                         title: 'Memelihara Ribuan Kilo Jaringan',
                         desc: 'Menembus hutan dan melintasi sungai, tim teknis kami menjaga urat nadi transmisi dan distribusi (JTM/JTR) agar bebas dari gangguan kritis.',
-                        img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
+                        img: '{{ asset('img/gambar-services-transmisi.jpeg') }}'
                     },
                     {
                         id: 3,
                         title: 'Hadirkan Solusi Daya Tanpa Kedip',
                         desc: 'Melalui sistem DRUPS (Diesel Rotary Uninterruptible Power Supply), kami melindungi fasilitas vital seperti rumah sakit dan data center dari kedipan listrik sedetik pun.',
-                        img: 'https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg'
+                        img: '{{ asset('img/foto_distribusi.jpg') }}'
                     }
                 ]
              }">
@@ -259,7 +259,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="{{ asset('img/gambar-services-pembangkit.jpg') }}"
+                    <img src="{{ asset('img/foto_pembangkit.jpg') }}"
                          alt="AMC Pembangkit" 
                          class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
@@ -282,7 +282,7 @@
                 </div>
 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg" alt="AMC Transmisi" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <img src="{{ asset('img/foto_transmisi.jpg') }}" alt="AMC Transmisi" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
@@ -301,7 +301,7 @@
                 </div>
 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="{{ asset('img/gambar-services-pembangkit.jpg') }}" alt="AMC Distribusi" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <img src="{{ asset('img/foto_distribusi.jpg') }}" alt="AMC Distribusi" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
@@ -320,7 +320,7 @@
                 </div>
 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg" alt="Penyedia Pembangkit" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <img src="{{ asset('img/gambar-services-pembangkit.jpg') }}" alt="Penyedia Pembangkit" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
@@ -339,7 +339,7 @@
                 </div>
 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg" alt="Beyond kWh" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <img src="{{ asset('img/foto_monitoring.jpeg') }}" alt="Beyond kWh" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
@@ -358,7 +358,7 @@
                 </div>
 
                 <div class="group relative h-[420px] w-full rounded-3xl overflow-hidden cursor-pointer shadow-md hover:shadow-2xl transition-all duration-500">
-                    <img src="https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg" alt="Pelayanan Pelanggan" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
+                    <img src="{{ asset('img/foto_pelayanan_pelanggan.jpg') }}" alt="Pelayanan Pelanggan" class="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div class="absolute inset-0 bg-gradient-to-t from-pln-dark via-pln-dark/80 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-500"></div>
                     <div class="absolute inset-x-0 bottom-0 p-8 flex flex-col justify-end">
                         <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 border border-white/20 transform group-hover:-translate-y-2 transition-transform duration-500">
