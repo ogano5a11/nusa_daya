@@ -71,3 +71,8 @@ Route::get('/anak-perusahaan', function () {
 Route::get('/privacy-policy', function () {
     return view('privacy-policy');
 })->name('privacy');
+
+// Halaman Hubungi Kami
+Route::get('/hubungi-kami', function () {
+    return view('contact');
+})->name('contact');

@@ -26,7 +26,7 @@
                 
                 <a href="{{ route('services.amc-pembangkit') }}" class="group block relative rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 bg-white border border-gray-100 h-[450px]">
                     <div class="absolute inset-0 h-2/3 overflow-hidden">
-                        <img src="{{ asset('img/gambar-services-pembangkit.jpg') }}" alt="AMC Pembangkit" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <img src="{{ asset('img/foto_pembangkit.jpg') }}" alt="AMC Pembangkit" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
                     </div>
                     <div class="absolute inset-x-0 bottom-0 p-10 bg-white flex flex-col h-1/2 justify-end">
@@ -43,7 +43,7 @@
 
                 <a href="{{ route('services.transmisi-distribusi') }}" class="group block relative rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 bg-white border border-gray-100 h-[450px]">
                     <div class="absolute inset-0 h-2/3 overflow-hidden">
-                        <img src="{{ asset('img/gambar-services-transmisi.jpeg') }}" alt="Transmisi" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <img src="{{ asset('img/foto_transmisi.jpg') }}" alt="Transmisi" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
                     </div>
                     <div class="absolute inset-x-0 bottom-0 p-10 bg-white flex flex-col h-1/2 justify-end">
@@ -60,7 +60,7 @@
 
                 <a href="{{ route('services.drups') }}" class="group block relative rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 bg-white border border-gray-100 h-[450px]">
                     <div class="absolute inset-0 h-2/3 overflow-hidden">
-                        <img src="https://blog.bankmega.com/wp-content/uploads/2025/07/Taman-Langit-Pangalengan-menawarkan-pemandangan-alam-menakjubkan.jpg" alt="DRUPS" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                        <img src="{{ asset('img/foto_monitoring.jpeg') }}" alt="DRUPS" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
                         <div class="absolute inset-0 bg-gradient-to-b from-transparent to-white"></div>
                     </div>
                     <div class="absolute inset-x-0 bottom-0 p-10 bg-white flex flex-col h-1/2 justify-end">
