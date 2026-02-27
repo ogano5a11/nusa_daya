@@ -453,7 +453,7 @@
 
                 <div class="lg:col-span-8 order-1 lg:order-2">
                     <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-1 ring-gray-100 transform hover:scale-[1.01] transition duration-700 bg-pln-blue/5">
-                        <img src="{{ asset('img/peta-wilayah.jpg') }}" 
+                        <img src="{{ asset('img/1.png') }}" 
                              alt="Peta Wilayah Kerja PLN Nusa Daya" 
                              class="w-full h-auto object-cover relative z-10">
                         
